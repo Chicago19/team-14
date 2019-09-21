@@ -16,7 +16,7 @@ body {
 /* Navbar container */
 .navbar2 {
     overflow: hidden;
-    background-color: #936fb1;
+    background-color: #76499e;
   }
   
   .navbar2 a {
@@ -45,7 +45,7 @@ body {
   }
   
   .navbar2 a:hover, .dropdown2:hover .dropbtn2 {
-    background-color: red;
+    background-color: #492b63;
   }
   
   .dropdown-content2 {
