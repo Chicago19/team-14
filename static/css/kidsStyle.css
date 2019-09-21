@@ -2,7 +2,9 @@ body {
     background-color: #eaf0e7;
     margin: 0 auto 10% auto;
 }
-
+.label {
+  font-size: 24px;
+}
 /* Navbar container */
 .app {
   margin: 10px;
