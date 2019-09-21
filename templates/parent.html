@@ -22,7 +22,7 @@
   <div class="d-flex" id="wrapper">
   
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
+    <!-- <div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
       <div class="sidebar-heading">Navigation Selections</div>
       <div class="list-group list-group-flush">
         <a href="#welcome" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -31,17 +31,29 @@
         <a href="#cyber_bullying" class="list-group-item list-group-item-action bg-light">Cyber Bullying</a>
         <a href="#events" class="list-group-item list-group-item-action bg-light">Events</a>
       </div>
-    </div>
+    </div> -->
     <!-- /#Sidebar -->
     
     <!-- Page Content -->
-    <div id="page-content-wrapper" class="content-toggled">
+    <div id="page-content-wrapper" class="content">
     
       <!-- Top Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <a href="javascript:history.back()">&#8592</a>
         <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #9370b1;"></i></button>
+        <div class="dropdown">
+          <button class="dropbtn2"> Quick Links
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content2">
+            <a href="#welcome" class="list-group-item list-group-item-action bg-light">Home</a>
+            <a href="#what_we_do" class="list-group-item list-group-item-action bg-light">What We Do</a>
+            <a href="#parent_handbook" class="list-group-item list-group-item-action bg-light">Parent Handbook</a>
+            <a href="#cyber_bullying" class="list-group-item list-group-item-action bg-light">Cyber Bullying</a>
+            <a href="#events" class="list-group-item list-group-item-action bg-light">Events</a>
+          </div>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -136,7 +148,7 @@ In accordance with Federal law, ChicagoCAC does not discriminate on the basis of
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
-      $("#page-content-wrapper").toggleClass(" content-toggled");
+      $("#page-content-wrapper").toggleClass("content-toggled");
     });
   </script>
 
