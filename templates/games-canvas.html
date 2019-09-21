@@ -36,13 +36,14 @@
                   </div>
                 </div> 
               </div>
-    <div class="container">
-         <div class="my-drawing"></div>
+    <div class="container-fluid" style = "margin-top: 50px; margin-left: -15px;">
+         <div class="my-drawing" style="width: 540px; height: 700px;"></div>
          <script>
-             LC.init(
+             var lc = LC.init(
                  document.getElementsByClassName('my-drawing')[0],
-                 {imageURLPrefix: '../static/img'}
+                 {imageURLPrefix: '../static/img'},
              );
+             
          </script>      
     </div>
 </body>
