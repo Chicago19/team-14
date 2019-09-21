@@ -10,6 +10,10 @@ body {
   color: #a8c399;
 }
 
+.green-background {
+  background-color: #eaf0e7;
+}
+
 ul {
   list-style: none; /* Remove default bullets */
 }
