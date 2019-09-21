@@ -1,19 +1,12 @@
 body {
     background-color: #eaf0e7;
+    margin: 0 auto 10% auto;
 }
-.container {
-    margin-top: 200px;
-    margin-left: 300px;
-}
-.row {
 
-    
-    width: 300px;
-    padding: 10px;
-    margin: 40px;
-
-}
 /* Navbar container */
+.app {
+  margin: 10px;
+}
 .navbar2 {
     overflow: hidden;
     background-color: #76499e;
