@@ -14,9 +14,6 @@
   <link href="../static/css/style.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   
-  <!-- Bootstrap core JavaScript -->
-  <script src="../static/js/jquery.min.js"></script>
-  <script src="../static/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +35,7 @@
     <!-- /#Sidebar -->
     
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" class="content-toggled">
     
       <!-- Top Navbar -->
       <nav class="navbar navbar-expand-lg">
@@ -129,6 +126,19 @@ In accordance with Federal law, ChicagoCAC does not discriminate on the basis of
     
   </div>
   <!-- /#Wrapper -->
+   
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      $("#page-content-wrapper").toggleClass(" content-toggled");
+    });
+  </script>
 
 </body>
 
