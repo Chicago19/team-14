@@ -65,8 +65,8 @@
                   </a>
                   </div>
                   <div class = "col">
-                  <a href="templates/parent.html">
-                    <input type="image" class="btn btn-light" src="images/book.png" />
+                  <a href="#">
+                    <input type="image" onClick="passwordCheck()" class="btn btn-light" src="images/book.png" />
                     <label>Information for Guardians</label>
                   </a>
                   </div>
@@ -80,5 +80,20 @@
     <p>Copyright © 2019 - Chicago Children's Advocacy Center</p>
   </div>
 </body>
+<script>
+    function passwordCheck(){
+    var password = prompt("Please enter the key.")
+    if (password === "GBHASVJPMC2020"){
+        console.log("Logged In");
+        window.location= "templates/parent.html";
+    } else if (password!='' && password!=null) {
+       if (password !=="ilikepie"){
+        window.location="index.html";
+        }
+      window.location="index.html";
+    }
+  }
+  
+</script>
 
 </html>
