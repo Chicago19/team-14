@@ -22,7 +22,7 @@
   <div class="d-flex" id="wrapper">
   
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
+    <!--<div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
       <div class="sidebar-heading">Navigation Selections</div>
       <div class="list-group list-group-flush">
         <a href="#welcome" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -31,25 +31,32 @@
         <a href="#cyber_bullying" class="list-group-item list-group-item-action bg-light">Cyber Bullying</a>
         <a href="#events" class="list-group-item list-group-item-action bg-light">Events</a>
       </div>
-    </div>
+    </div> -->
     <!-- /#Sidebar -->
     
     <!-- Page Content -->
     <div id="page-content-wrapper" class="content-toggled">
     
       <!-- Top Navbar -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <a href="javascript:history.back()">&#8592</a>
-        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #9370b1;"></i></button>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <a href="javascript:history.forward()" class="navbar-toggler-right">&#8594</a>
-        </div>
-      </nav>
+      <div class="navbar2">
+        <a id="arrow" onclick="myFunction()"> &#8592 </a>
+        <a href="#">Age Group 0-3</a>
+        <a href="../index.html">Parents</a>
+        <div class="dropdown2">
+          <button class="dropbtn2"> Kids
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content2">
+            <a href="./kids2.html">Age 4-6</a>
+            <a href="./kids3.html">Age 7-9</a>
+            <a href="./kids4.html">Age 10-12</a>
+            <a href="./kids5.html">Age 12-18</a>
+          </div>
+        </div> 
+      </div>
+        <br>
+        <br>
+        <br>
       <!-- /#Top Navbar -->
       
       <!-- Below here is a series of DIVs that reepresent those links that are present in the sidebar  -->
@@ -138,6 +145,9 @@ In accordance with Federal law, ChicagoCAC does not discriminate on the basis of
       $("#wrapper").toggleClass("toggled");
       $("#page-content-wrapper").toggleClass(" content-toggled");
     });
+    function myFunction() {
+      window.history.back();
+    }
   </script>
 
 </body>
