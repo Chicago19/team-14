@@ -15,7 +15,7 @@
         <div class="navbar2">
                 <a id="arrow" onclick="myFunction()"> &#8592 </a>
                 <a href="#">Age Group 0-3</a>
-                <a href="../index.html">Parents</a>
+                <a href="#" onClick="passwordCheck()">Parents</a>
                 <div class="dropdown2">
                   <button class="dropbtn2"> Kids
                     <i class="fa fa-caret-down"></i>
@@ -39,30 +39,30 @@
             <p class = "label">Quick Draw</p>
         </div>
         <div class = "col">
-            <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
-            <p class = "label">Label 2</p>
+            <img src="../images/pinkalicious-and-peterrific-pinkalicious-stickers_2.jpg" class="app img-rounded" alt="Cinque Terre">
+            <h3 class = "label">Pinktastic Stickers</h3>
         </div>
       </div>
 
       <div class = "row">
           <div class = "col">
-              <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
-              <p class = "label">Label 3</p>
+              <img src="../images/plum-landing-jungle-jeopardy.jpg" class="app img-rounded" alt="Cinque Terre">
+              <h3 class = "label">Jungle Jepoardy</h3>
           </div>
           <div class = "col">
-              <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
-              <p class = "label">Label 4</p>
+              <img src="../images/the-ruff-ruffman-show-ruffs-cookie-creator_2.jpg" class="app img-rounded" alt="Cinque Terre">
+              <h3 class = "label">Cookie Creator</h3>
           </div>
         </div>
 
         <div class = "row">
             <div class = "col">
                 <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
-                <p class = "label">Label 5</p>
+                <h3 class = "label">Label 5</h3>
             </div>
             <div class = "col">
                 <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
-                <p class = "label">Label 6</p>
+                <h3 class = "label">Label 6</h3>
             </div>
           </div>
 
@@ -72,5 +72,17 @@
     function myFunction() {
       window.history.back();
     }
+    function passwordCheck(){
+    var password = prompt("Please enter the key.")
+    if (password === "GBHASVJPMC2020"){
+        console.log("Logged In");
+        window.location= "parent.html";
+    } else if (password!='' && password!=null) {
+       if (password !=="GBHASVJPMC2020"){
+        window.location="kids1.html";
+        }
+      window.location="kids1.html";
+    }
+  }
 </script>
 </html>

@@ -15,7 +15,7 @@
         <div class="navbar2">
                 <a id="arrow" onclick="myFunction()"> &#8592 </a>
                 <a href="#">Age Group 7-9</a>
-                <a href="../index.html">Parents</a>
+                <a href="#" onClick="passwordCheck()">Parents</a>
                 <div class="dropdown2">
                   <button class="dropbtn2"> Kids 
                     <i class="fa fa-caret-down"></i>
@@ -35,29 +35,29 @@
 
                   <div class = "row">
                     <div class = "col">
-                        <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                        <img src="../images/the-cat-in-the-hat-builda-ma-loo.jpg" class="app img-rounded" alt="Cinque Terre">
                         <p class = "label">Label 1</p>
                     </div>
                     <div class = "col">
-                        <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                        <img src="../images/nature-cat-racing-rapids.jpg" class="app img-rounded" alt="Cinque Terre">
                         <p class = "label">Label 2</p>
                     </div>
                   </div>
             
                   <div class = "row">
                       <div class = "col">
-                          <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                          <img src="../images/peg-cat-music-maker.jpg" class="app img-rounded" alt="Cinque Terre">
                           <p class = "label">Label 3</p>
                       </div>
                       <div class = "col">
-                          <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                          <img src="../images/cyberchase-space-waste-odyssey.jpg" class="app img-rounded" alt="Cinque Terre">
                           <p class = "label">Label 4</p>
                       </div>
                     </div>
             
                     <div class = "row">
                         <div class = "col">
-                            <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                            <img src="../images/design-squad-fidgit-power.jpg" class="app img-rounded" alt="Cinque Terre">
                             <p class = "label">Label 5</p>
                         </div>
                         <div class = "col">
@@ -72,6 +72,18 @@
     function myFunction() {
       window.history.back();
     }
+    function passwordCheck(){
+    var password = prompt("Please enter the key.")
+    if (password === "GBHASVJPMC2020"){
+        console.log("Logged In");
+        window.location= "parent.html";
+    } else if (password!='' && password!=null) {
+       if (password !=="GBHASVJPMC2020"){
+        window.location="kids3.html";
+        }
+      window.location="kids3.html";
+    }
+  }
 </script>
   
 </html>

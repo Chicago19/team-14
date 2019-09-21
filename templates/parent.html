@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -17,26 +16,29 @@
 
 </head>
 
-<body onload="on()">
+<body>
 
+  <!-- Wrapper -->
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Navigation Selections</div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">FAQ</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Resources</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Referrals</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#welcome" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="#what_we_do" class="list-group-item list-group-item-action bg-light">What We Do</a>
+        <a href="#parent_handbook" class="list-group-item list-group-item-action bg-light">Parent Handbook</a>
+        <a href="#cyber_bullying" class="list-group-item list-group-item-action bg-light">Cyber Bullying</a>
+        <a href="#events" class="list-group-item list-group-item-action bg-light">Events</a>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
+    <!-- /#Sidebar -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div id="page-content-wrapper" class="content-toggled">
+
+      <!-- Top Navbar -->
+      <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <input id="back" onclick="myBack()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf048;" type="submit">
         <input id="forward" onclick="myForward()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf051;" type="submit">
@@ -49,27 +51,82 @@
           <a href="../index.html"> <i class="fas fa-home fa-4x"></i></a>
         </div>
       </nav>
+      <!-- /#Top Navbar -->
 
-      <div class="container-fluid">
-        <h1 class="purple">Welcome Parents</h1>
-        <div class="rounded" style="background-color:#E8E8E8;padding:10px;">
-          <p>Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment.  Since opening our doors in 2001, we have served more than 34,000 children.</p>
-          <p>ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Our staff:</p>
-          <ul>
-            <li>facilitates our partners’ collaborative response</li>
-            <li>arranges families’ visits to the center, including provision of support services such as transportation and child life</li>
-            <li>conducts forensic interviews</li>
-            <li>provides family advocacy and crisis intervention services</li>
-            <li>provides mental health therapy</li>
-          </ul>
-          <p>All of our services are aimed at reducing trauma so that children and families may begin the healing process. ChicagoCAC’s services are free of charge to every client.</p>
+      <!-- Below here is a series of DIVs that reepresent those links that are present in the sidebar  -->
+      <div id="welcome" class="info-div container-fluid">
+        <h1>Welcome Parents and Guardians</h1>
+        <h2>Who We Are</h2>
+        <p>Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment.  Since opening our doors in 2001, we have served more than 34,000 children.
+
+ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Our staff:</p>
+        <ul>
+          <li>facilitates our partners’ collaborative response</li>
+          <li>arranges families’ visits to the center, including provision of support services such as transportation and child life</li>
+          <li>conducts forensic interviews</li>
+          <li>provides family advocacy and crisis intervention services</li>
+          <li>provides mental health therapy</li>
+        </ul>
+        <p>All of our services are aimed at reducing trauma so that children and families may begin the healing process. ChicagoCAC’s services are free of charge to every client.</p>
+        <h2>Our Mission</h2>
+        <p>Uniting public, private and community partners to ensure the safety, health and well-being of abused children.</p>
+        <h2>Our Shared Vision</h2>
+        <p>To eliminate the suffering of abused children in Chicago.</p>
+        <h2>Our Core Values</h2>
+        <ol>
+          <li>Freedom from abuse and exploitation is a basic human right.</li>
+          <li>The center is a safe place for everyone who enters its doors.</li>
+          <li>The collaborative process is the best approach to prevent and respond to child abuse.</li>
+          <li>Our children and families deserve to receive the highest standard of care available.</li>
+          <li>Best-practice interventions can restore lives.</li>
+        </ol>
+        <h2>Our Approach</h2>
+        <p>Our approach is based on a nationwide model of child advocacy centers, and we are accredited by the National Children’s Alliance. ChicagoCAC believes that a multi-disciplinary approach is the most effective way to protect children and prevent abuse.</p>
+        <h2>Our History</h2>
+        <p>ChicagoCAC was founded by former Chicago Mayor Richard M. Daley in 1998. The city, county and state provided seed money and additional resources to build our center, which opened in 2001. Learn more.</p>
+        <h2>Our Funding</h2>
+        <p>Just as our work to help children and families heal from abuse is a public-private partnership, our funding represents a mix of private and government sources. Learn more.</p>
+      </div>
+
+      <div id="what_we_do" class="info-div container-fluid">
+        <h1>What We Do</h1>
+        <p>Since opening our doors in 2001, we have served more than 34,000 children. ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Learn more about our services below and by using the navigation on the left.
+
+Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment. </p>
+        <h2>Response to Sexual Abuse</h2>
+        <p>ChicagoCAC responds to reports of child sexual abuse as part of a multi-disciplinary team of experts. Together, we investigate alleged abuse, conduct forensic interviews, provide family advocacy, reduce trauma and identify resources so that children and families may begin the healing process. Learn more about our response to child sexual abuse.
+
+        To learn more about ChicagoCAC and to help explain to children what they will experience at the center before they arrive, check out our child-friendly coloring book.</p>
+        <h2>Education, Prevention, and Policy</h2>
+        <p>ChicagoCAC’s education, prevention & policy team facilitates trainings for professionals and community members on preventing, recognizing, responding to and reporting abuse. In addition, the team conducts trainings on trauma-informed environments, protecting children with disabilities and more. Learn more about our outreach. </p>
+        <h2>Forensic Interviews</h2>
+        <p>In addition to providing forensic interviews for children who have been sexually abused, ChicagoCAC also interviews children who have experienced other types of abuse, have witnessed violence or have special needs that may make a traditional interview more difficult. Learn more about forensic interviews.</p>
+        <h2>Medical Clinic</h2>
+        <p>Cook County Health runs our on-site medical clinic. Four board-certified child abuse pediatricians staff the clinic and provide comprehensive, developmentally-sensitive, trauma-informed medical assessments and care for child sexual abuse. Learn more about our medical clinic.</p>
+        <h2>Mental Health Services</h2>
+        <p>ChicagoCAC’s mental health team helps children heal from the trauma of abuse. In our Family Hope Center, therapists create a comfortable, safe space for children to tell their trauma stories, identify and overcome challenges, develop positive coping skills and build healthy relationships.  Learn more about ChicagoCAC’s mental health services.
+
+In accordance with Federal law, ChicagoCAC does not discriminate on the basis of race, color, religion, sex, national origin, ancestry, age, order of protection status, marital status, physical or mental disability, military status, sexual orientation, or unfavorable discharge from military service when it comes to providing services to our clients. For our full policy, click here.</p>
+        <h2>Response to Commercial Sexual Exploitation of Children</h2>
+        <p>CSEC is a form of sexual abuse that involves the exploitation of a child for the financial benefit of any person or in exchange for anything of value; some of which include sex trafficking, prostitution, pornography, online transmission of live video of a child engaged in sexual activity, and child labor. Our CSEC Specialist provides case coordination and collaboration for child victims and their families. </p>
+      </div>
+
+      <div id="parent_handbook" class="info-div container-fluid">
+        <h1>Parent Handbook</h1>
+        <embed src="../pdf/Parent_Handbook.pdf" width="540" height="700" />
+      </div>
+
+      <div id="cyber_bullying" class="info-div container-fluid">
+        <h1>Cyber Bullying</h1>
+        <embed src="../pdf/Cyber_Bullying.pdf" width="540" height="700" />
+      </div>
+      <!-- End Sidebar Links -->
+
     </div>
-    <!-- /#page-content-wrapper -->
+    <!-- /#Page Content Wrapper -->
 
   </div>
-</div>
-</div>
-  <!-- /#wrapper -->
+  <!-- /#Wrapper -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="../static/js/jquery.min.js"></script>
@@ -80,20 +137,9 @@
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
+      $("#page-content-wrapper").toggleClass(" content-toggled");
     });
   </script>
-  <script>
-      function myBack() {
-        window.history.back();
-      }
-      function myForward() {
-        window.history.forward();
-      }
-      function on() {
-        $("#wrapper").toggleClass("toggled");
-      }
-  </script>
-
 
 </body>
 

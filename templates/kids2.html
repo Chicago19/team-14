@@ -15,7 +15,7 @@
         <div class="navbar2">
                 <a id="arrow" onclick="myFunction()"> &#8592 </a>
                 <a href="#">Age Group 4-6</a>
-                <a href="../index.html">Parents</a>
+                <a href="#" onClick="passwordCheck()">Parents</a>
                 <div class="dropdown2">
                   <button class="dropbtn2"> Kids
                     <i class="fa fa-caret-down"></i>
@@ -39,10 +39,32 @@
                         <p class = "label">Jet Cat</p>
                     </div>
                     <div class = "col">
-                        <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
-                        <p class = "label">Label 2</p>
+                        <img src="../images/nature-cat-hals-big-dig.jpg" class="app img-rounded" alt="Cinque Terre">
+                        <p class = "label">Cat Hals Big Dig</p>
                     </div>
                   </div>
+
+                  <div class = "row">
+                      <div class = "col">
+                          <img src="../images/odd-squad-build-a-squad.jpg" class="app img-rounded" alt="Cinque Terre">
+                          <p class = "label">Build A Squad</p>
+                      </div>
+                      <div class = "col">
+                          <img src="../images/dinosaur-train-buddys-big-campout-adventure.jpg" class="app img-rounded" alt="Cinque Terre">
+                          <p class = "label">Dinosaur </p>
+                      </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col">
+                            <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                            <p class = "label">Label 5</p>
+                        </div>
+                        <div class = "col">
+                            <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                            <p class = "label">Label 6</p>
+                        </div>
+                      </div>
 
                 </div>
 </body>
@@ -50,6 +72,18 @@
     function myFunction() {
       window.history.back();
     }
-    </script>
+    function passwordCheck(){
+    var password = prompt("Please enter the key.")
+    if (password === "GBHASVJPMC2020"){
+        console.log("Logged In");
+        window.location= "parent.html";
+    } else if (password!='' && password!=null) {
+       if (password !=="GBHASVJPMC2020"){
+        window.location="kids2.html";
+        }
+      window.location="kids2.html";
+    }
+  }
+</script>
 
 </html>
