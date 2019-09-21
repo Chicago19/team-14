@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #eaf0e7;
 }
 .container {
     margin-top: 200px;
@@ -16,12 +16,12 @@ body {
 /* Navbar container */
 .navbar2 {
     overflow: hidden;
-    background-color: #333;
+    background-color: #936fb1;
   }
   
   .navbar2 a {
     float: left;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
     text-align: center;
     padding: 14px 16px;
