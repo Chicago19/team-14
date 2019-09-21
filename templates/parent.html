@@ -17,13 +17,12 @@
 
 </head>
 
-<body>
-  <!--<div style="background-color: #a8c399; position: absolute; height: 2em; width: 100%; z-index: 1; text-align: center;"></div>-->
+<body onload="on()">
 
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
+    <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Navigation Selections</div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -31,32 +30,29 @@
         <a href="#" class="list-group-item list-group-item-action bg-light">Resources</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Referrals</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'welcome_parents')">Welcome</button> 
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'what_we_do')">What We Do</button> 
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <a href="javascript:history.back()">&#8592</a>
-        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #9370b1;"></i></button>
+        <input id="back" onclick="myBack()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf048;" type="submit">
+        <input id="forward" onclick="myForward()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf051;" type="submit">
+        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #a8c399;"></i></button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        </div>
+      </div>
         <div class="navbar-collapse collapse">
-          <a href="javascript:history.forward()" class="navbar-toggler-right">&#8594</a>
+          <a href="../index.html"> <i class="fas fa-home fa-4x"></i></a>
         </div>
       </nav>
 
-      <!-- Welcome Tab  -->
-      <div id="welcome_parents" class="tabcontent container-fluid">
+      <div class="container-fluid">
         <h1 class="purple">Welcome Parents</h1>
-        <div class="rounded" style="padding:10px;">
+        <div class="rounded" style="background-color:#E8E8E8;padding:10px;">
           <p>Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment.  Since opening our doors in 2001, we have served more than 34,000 children.</p>
           <p>ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Our staff:</p>
           <ul>
@@ -67,32 +63,14 @@
             <li>provides mental health therapy</li>
           </ul>
           <p>All of our services are aimed at reducing trauma so that children and families may begin the healing process. ChicagoCAC’s services are free of charge to every client.</p>
-          <embed src="../pdf/Parent_Handbook.pdf" width="540" height="700" />
-        </div>
-      </div>
-
-      <!-- What We Do Tab -->
-      <div id="what_we_do" class="tabcontent container-fluid">
-        <h1 class="purple">What We Do</h1>
-      </div>
-
-      <!--  -->
-      <div id="" class="tabcontent container-fluid">
-        <h1></h1>
-      </div>
-
-      <!--  -->
-      <div id="" class="tabcontent container-fluid">
-        <h1></h1>
-      </div>
-      
-      
-      <!-- /#container-fluid -->
     </div>
     <!-- /#page-content-wrapper -->
+
   </div>
+</div>
+</div>
   <!-- /#wrapper -->
-  
+
   <!-- Bootstrap core JavaScript -->
   <script src="../static/js/jquery.min.js"></script>
   <script src="../static/js/bootstrap.bundle.min.js"></script>
@@ -103,27 +81,17 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-    
-    function openTab(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+  </script>
+  <script>
+      function myBack() {
+        window.history.back();
+      }
+      function myForward() {
+        window.history.forward();
+      }
+      function on() {
+        $("#wrapper").toggleClass("toggled");
+      }
   </script>
 
 
