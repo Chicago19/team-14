@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
+<head>  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Parent's Page</title>
-
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="../static/css/parent.css" rel="stylesheet">
   <link href="../static/css/style.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script>window.onload = function() {document.getElementById("defaultOpen").click();}</script>
-
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <!--<div style="background-color: #a8c399; position: absolute; height: 2em; width: 100%; z-index: 1; text-align: center;"></div>-->
 
+  <!-- Wrapper -->
   <div class="d-flex" id="wrapper">
-
+  
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
       <div class="sidebar-heading">Navigation Selections</div>
@@ -32,17 +33,15 @@
         <a href="#" class="list-group-item list-group-item-action bg-light">Resources</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Referrals</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'welcome_parents')" id="defaultOpen">Welcome</button>
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'what_we_do')">What We Do</button>
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'parent_handbook')">Parent Handbook</button>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
-
+    <!-- /#Sidebar -->
+    
     <!-- Page Content -->
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-expand-lg ">
+    
+      <!-- Top Navbar -->
+      <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <a href="javascript:history.back()">&#8592</a>
         <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #9370b1;"></i></button>
@@ -54,90 +53,27 @@
           <a href="javascript:history.forward()" class="navbar-toggler-right">&#8594</a>
         </div>
       </nav>
-
-      <!-- Welcome Tab  -->
-      <div id="welcome_parents" class="tabcontent container-fluid">
-        <h1 class="purple">Welcome Parents</h1>
-        <div class="rounded" style="padding:10px;">
-          <p>Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment.  Since opening our doors in 2001, we have served more than 34,000 children.</p>
-          <p>ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Our staff:</p>
-          <ul>
-            <li>facilitates our partners’ collaborative response</li>
-            <li>arranges families’ visits to the center, including provision of support services such as transportation and child life</li>
-            <li>conducts forensic interviews</li>
-            <li>provides family advocacy and crisis intervention services</li>
-            <li>provides mental health therapy</li>
-          </ul>
-          <p>All of our services are aimed at reducing trauma so that children and families may begin the healing process. ChicagoCAC’s services are free of charge to every client.</p>
-        </div>
+      <!-- /#Top Navbar -->
+      
+      <!-- Below here is a series of DIVs that reepresent those links that are present in the sidebar  -->
+      <div id="welcome" class="info-div container-fluid">
+        <h1>Welcome Parents and Guardians</h1>
       </div>
-
-      <!-- What We Do Tab -->
-      <div id="what_we_do" class="tabcontent container-fluid">
-        <h1 class="purple">What We Do</h1>
-        <p>Since opening our doors in 2001, we have served more than 34,000 children. ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Learn more about our services below and by using the navigation on the left.
-
-Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment. </p>
-        <h2 class="purple">Response to Sexual Abuse</h2>
-        <p>ChicagoCAC responds to reports of child sexual abuse as part of a multi-disciplinary team of experts. Together, we investigate alleged abuse, conduct forensic interviews, provide family advocacy, reduce trauma and identify resources so that children and families may begin the healing process. Learn more about our response to child sexual abuse. 
-        
-        To learn more about ChicagoCAC and to help explain to children what they will experience at the center before they arrive, check out our child-friendly coloring book.</p>
-        <h2 class="purple">Education, Prevention & Policy</h2>
-        <p>ChicagoCAC’s education, prevention & policy team facilitates trainings for professionals and community members on preventing, recognizing, responding to and reporting abuse. In addition, the team conducts trainings on trauma-informed environments, protecting children with disabilities and more. Learn more about our outreach. </p>
+      
+      <div id="what_we_do" class="info-div container-fluid">
+        <h1>What We Do</h1>
       </div>
-
-      <!-- Parent Handbook -->
-      <div id="parent_handbook" class="tabcontent container-fluid">
+      
+      <div id="parent_handbook" class="info-div container-fluid">
         <h1>Parent Handbook</h1>
-        <embed src="../pdf/Parent_Handbook.pdf" width="540" height="700" />
       </div>
-
-      <!--  -->
-      <div id="" class="tabcontent container-fluid">
-        <h1></h1>
-      </div>
-      
-      
-      <!-- /#container-fluid -->
-    </div>
-    <!-- /#page-content-wrapper -->
-  </div>
-  <!-- /#wrapper -->
-  
-  <!-- Bootstrap core JavaScript -->
-  <script src="../static/js/jquery.min.js"></script>
-  <script src="../static/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
+      <!-- End Sidebar Links -->
     
-    function openTab(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  $('.tablinks').css('color','#666666')
-  evt.currentTarget.className += " active";
-}
-  </script>
-
+    </div>
+    <!-- /#Page Content Wrapper -->
+    
+  </div>
+  <!-- /#Wrapper -->
 
 </body>
 

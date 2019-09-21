@@ -68,3 +68,7 @@ ul li::before {
     margin-left: -15rem;
   }
 }
+
+h1.info-div, h2.info-div, h3.info-div {
+  color: #9370b1;
+}
