@@ -22,7 +22,7 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <!--<div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
       <div class="sidebar-heading">Navigation Selections</div>
       <div class="list-group list-group-flush">
         <a href="#welcome" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -31,30 +31,27 @@
         <a href="#cyber_bullying" class="list-group-item list-group-item-action bg-light">Cyber Bullying</a>
         <a href="#events" class="list-group-item list-group-item-action bg-light">Events</a>
       </div>
-    </div>
+    </div> -->
     <!-- /#Sidebar -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper" class="content-toggled">
+    <div id="page-content-wrapper" class="">
 
       <!-- Top Navbar -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <input id="back" onclick="myBack()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf048;" type="submit">
-        <input id="forward" onclick="myForward()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf051;" type="submit">
-        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #a8c399;"></i></button>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="navbar2" style="position: fixed; width: 100%;">
+        <a id="arrow" onclick="myFunction()"> &#8592 </a>
+        <a href="#welcome">Who We Are</a>
+        <a href="#what_we_do" >What We Do</a>
+        <a href="#parent_handbook" >Parent Handbook</a>
+        <a href="#cyber_bullying" >Cyber Bullying</a>
+        <a href="#events">Events</a>
+        <a href="../index.html">Return to Home</a>
       </div>
-        <div class="navbar-collapse collapse">
-          <a href="../index.html"> <i class="fas fa-home fa-4x"></i></a>
-        </div>
-      </nav>
       <!-- /#Top Navbar -->
-
+      <br>
+      <br>
       <!-- Below here is a series of DIVs that reepresent those links that are present in the sidebar  -->
-      <div id="welcome" class="info-div container-fluid">
+      <div id="welcome" class="info-div container-fluid" style="margin-top: 50px;">
         <h1>Welcome Parents and Guardians</h1>
         <h2>Who We Are</h2>
         <p>Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment.  Since opening our doors in 2001, we have served more than 34,000 children.
@@ -139,6 +136,9 @@ In accordance with Federal law, ChicagoCAC does not discriminate on the basis of
       $("#wrapper").toggleClass("toggled");
       $("#page-content-wrapper").toggleClass(" content-toggled");
     });
+    function myFunction() {
+      window.history.back();
+    }
   </script>
 
 </body>
