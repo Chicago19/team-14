@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Parent's Page</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../static/css/parent.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Navigation Selections</div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">FAQ</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Resources</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Referrals</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #a8c399;"></i></button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="purple">Welcome Parents</h1>
+        <div class="rounded" style="background-color:#E8E8E8;padding:10px;">
+          <p>Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment.  Since opening our doors in 2001, we have served more than 34,000 children.</p>
+          <p>ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Our staff:</p>
+          <ul>
+            <li>facilitates our partners’ collaborative response</li>
+            <li>arranges families’ visits to the center, including provision of support services such as transportation and child life</li>
+            <li>conducts forensic interviews</li>
+            <li>provides family advocacy and crisis intervention services</li>
+            <li>provides mental health therapy</li>
+          </ul>
+          <p>All of our services are aimed at reducing trauma so that children and families may begin the healing process. ChicagoCAC’s services are free of charge to every client.</p>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
