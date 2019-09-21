@@ -69,6 +69,6 @@ ul li::before {
   }
 }
 
-h1.info-div, h2.info-div, h3.info-div {
+.info-div h1, h2, h3 {
   color: #9370b1;
 }
