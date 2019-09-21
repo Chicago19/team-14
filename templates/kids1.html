@@ -15,7 +15,7 @@
         <div class="navbar2">
                 <a id="arrow" onclick="myFunction()"> &#8592 </a>
                 <a href="#">Age Group 0-3</a>
-                <a href="../index.html">Parents</a>
+                <a href="#" onClick="passwordCheck()">Parents</a>
                 <div class="dropdown2">
                   <button class="dropbtn2"> Kids
                     <i class="fa fa-caret-down"></i>
@@ -72,5 +72,17 @@
     function myFunction() {
       window.history.back();
     }
+    function passwordCheck(){
+    var password = prompt("Please enter the key.")
+    if (password === "GBHASVJPMC2020"){
+        console.log("Logged In");
+        window.location= "parent.html";
+    } else if (password!='' && password!=null) {
+       if (password !=="GBHASVJPMC2020"){
+        window.location="kids1.html";
+        }
+      window.location="kids1.html";
+    }
+  }
 </script>
 </html>
