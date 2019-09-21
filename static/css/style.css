@@ -1,6 +1,9 @@
 body {
-}
 
+}
+.page-footer {
+    background-color: #9370b1;
+}
 .container #navigation, .container .menu ul.sub-menu, .container .menu ul.children {
 background-color: #9370b1;	}
 
