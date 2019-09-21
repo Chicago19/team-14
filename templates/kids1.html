@@ -13,8 +13,10 @@
 
 <body>
         <div class="navbar2">
+                <a id="arrow" onclick="myFunction()"> &#8592 </a>
+                <a id="arrow"> &#8592 </a>
                 <a href="#">Age Group 0-3</a>
-                <a href="./index.html">Parents</a>
+                <a href="../index.html">Parents</a>
                 <div class="dropdown2">
                   <button class="dropbtn2"> Kids
                     <i class="fa fa-caret-down"></i>
@@ -49,7 +51,11 @@
               </div>
               
             </div>
-          </div>
+         </div>
 </body>
-  
+<script>
+    function myFunction() {
+      window.history.back();
+    }
+</script>
 </html>
