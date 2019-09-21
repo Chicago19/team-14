@@ -15,7 +15,7 @@
         <div class="navbar2">
                 <a id="arrow" onclick="myFunction()"> &#8592 </a>
                 <a href="#">Age Group 12-18</a>
-                <a href="../index.html">Parents</a>
+                <a href="#" onClick="passwordCheck()">Parents</a>
                 <div class="dropdown2">
                   <button class="dropbtn2"> Kids 
                     <i class="fa fa-caret-down"></i>
@@ -26,7 +26,8 @@
                     <a href="./kids3.html">Age 7-9</a>
                     <a href="./kids4.html">Age 10-12</a>
                   </div>
-                </div> 
+                </div>
+                <a href="../index.html" style = "float: right"><i class="fa fa-home"></i></a> 
               </div>
               <br>
               <br>
@@ -35,33 +36,33 @@
 
                   <div class = "row">
                     <div class = "col">
-                        <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                        <img src="../images/football.jpg" class="app img-rounded" alt="Cinque Terre">
                         <p class = "label">Label 1</p>
                     </div>
                     <div class = "col">
-                        <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                        <img src="../images/soccer.png" class="app img-rounded" alt="Cinque Terre">
                         <p class = "label">Label 2</p>
                     </div>
                   </div>
             
                   <div class = "row">
                       <div class = "col">
-                          <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                          <img src="../images/pool.jpg" class="app img-rounded" alt="Cinque Terre">
                           <p class = "label">Label 3</p>
                       </div>
                       <div class = "col">
-                          <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                          <img src="../images/carom.png" class="app img-rounded" alt="Cinque Terre">
                           <p class = "label">Label 4</p>
                       </div>
                     </div>
             
                     <div class = "row">
                         <div class = "col">
-                            <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                            <img src="../images/crossy_road.jpg" class="app img-rounded" alt="Cinque Terre">
                             <p class = "label">Label 5</p>
                         </div>
                         <div class = "col">
-                            <img src="../images/bird.jpeg" class="app img-rounded" alt="Cinque Terre">
+                            <img src="../images/basketball.jpg" class="app img-rounded" alt="Cinque Terre">
                             <p class = "label">Label 6</p>
                         </div>
                       </div>
@@ -72,6 +73,18 @@
     function myFunction() {
       window.history.back();
     }
+    function passwordCheck(){
+    var password = prompt("Please enter the key.")
+    if (password === "GBHASVJPMC2020"){
+        console.log("Logged In");
+        window.location= "parent.html";
+    } else if (password!='' && password!=null) {
+       if (password !=="GBHASVJPMC2020"){
+        window.location="kids5.html";
+        }
+      window.location="kids5.html";
+    }
+  }
 </script>
   
 </html>
