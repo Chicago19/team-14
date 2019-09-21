@@ -1,27 +1,20 @@
 body {
-    background-color: white;
+    background-color: #eaf0e7;
+    margin: 0 auto 10% auto;
 }
-.container {
-    margin-top: 200px;
-    margin-left: 300px;
-}
-.row {
 
-    
-    width: 300px;
-    padding: 10px;
-    margin: 40px;
-
-}
 /* Navbar container */
+.app {
+  margin: 10px;
+}
 .navbar2 {
     overflow: hidden;
-    background-color: #333;
+    background-color: #76499e;
   }
   
   .navbar2 a {
     float: left;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -34,7 +27,7 @@ body {
   }
   
   .dropdown2 .dropbtn2 {
-    font-size: 16px;  
+    font-size: 24px;  
     border: none;
     outline: none;
     color: white;
@@ -45,7 +38,7 @@ body {
   }
   
   .navbar2 a:hover, .dropdown2:hover .dropbtn2 {
-    background-color: red;
+    background-color: #492b63;
   }
   
   .dropdown-content2 {
@@ -90,4 +83,8 @@ body {
   .btn:hover{ 
       width: 75px; 
       height: 75px;
+}
+
+#arrow {
+  color: #ffffff
 }
