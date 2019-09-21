@@ -10,6 +10,10 @@ body {
   color: #a8c399;
 }
 
+.navbar {
+  background: #582c7c;
+}
+
 ul {
   list-style: none; /* Remove default bullets */
 }
@@ -43,6 +47,7 @@ ul li::before {
 
 #page-content-wrapper {
   min-width: 100vw;
+  font-size:
 }
 
 #wrapper.toggled #sidebar-wrapper {
