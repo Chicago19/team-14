@@ -12,6 +12,24 @@ body {
 
 .navbar {
   background: #582c7c;
+  position: fixed;
+  width: 100%;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+}
+
+#page-content-wrapper {
+  
+}
+
+.content-toggled {
+  margin-left: 15em;
+}
+
+#welcome {
+  margin-top: 3.5em;
 }
 
 ul {
@@ -67,4 +85,8 @@ ul li::before {
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+
+.info-div h1, h2, h3 {
+  color: #9370b1;
 }
