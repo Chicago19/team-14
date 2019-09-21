@@ -21,7 +21,7 @@ body {
 }
 
 #page-content-wrapper {
-  
+
 }
 
 .content-toggled {
@@ -87,6 +87,18 @@ ul li::before {
   }
 }
 
+#what_we_do {
+  padding-top: 80px;
+}
+
+#parent_handbook {
+  padding-top: 80px;
+}
+
+#events {
+  padding-top: 80px;
+}
+
 .info-div h1, h2, h3 {
   color: #9370b1;
 }
@@ -110,7 +122,7 @@ ul li::before {
 }
 
 .dropdown2 .dropbtn2 {
-  font-size: 24px;  
+  font-size: 24px;
   border: none;
   outline: none;
   color: white;
