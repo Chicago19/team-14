@@ -8,6 +8,7 @@ body {
 /* Navbar container */
 .app {
   margin: 10px;
+  width: 300px;
 }
 .navbar2 {
     overflow: hidden;
