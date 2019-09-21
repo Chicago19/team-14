@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Parent's Page</title>
-  
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="../static/css/parent.css" rel="stylesheet">
   <link href="../static/css/style.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  
+
 </head>
 
 <body>
 
   <!-- Wrapper -->
   <div class="d-flex" id="wrapper">
-  
+
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper" style="z-index: 2">
+    <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Navigation Selections</div>
       <div class="list-group list-group-flush">
         <a href="#welcome" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -33,25 +33,26 @@
       </div>
     </div>
     <!-- /#Sidebar -->
-    
+
     <!-- Page Content -->
     <div id="page-content-wrapper" class="content-toggled">
-    
+
       <!-- Top Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <a href="javascript:history.back()">&#8592</a>
-        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #9370b1;"></i></button>
+        <input id="back" onclick="myBack()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf048;" type="submit">
+        <input id="forward" onclick="myForward()" style="font-family: FontAwesome; border-style: none; font-size: 2em; margin-right: 12px;" value="&#xf051;" type="submit">
+        <button id="menu-toggle"><i class="fa fa-bars" style="font-size: 2em; color: #a8c399;"></i></button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        </div>
+      </div>
         <div class="navbar-collapse collapse">
-          <a href="javascript:history.forward()" class="navbar-toggler-right">&#8594</a>
+          <a href="../index.html"> <i class="fas fa-home fa-4x"></i></a>
         </div>
       </nav>
       <!-- /#Top Navbar -->
-      
+
       <!-- Below here is a series of DIVs that reepresent those links that are present in the sidebar  -->
       <div id="welcome" class="info-div container-fluid">
         <h1>Welcome Parents and Guardians</h1>
@@ -86,15 +87,15 @@ ChicagoCAC is the city’s only not-for-profit organization that coordinates the
         <h2>Our Funding</h2>
         <p>Just as our work to help children and families heal from abuse is a public-private partnership, our funding represents a mix of private and government sources. Learn more.</p>
       </div>
-      
+
       <div id="what_we_do" class="info-div container-fluid">
         <h1>What We Do</h1>
         <p>Since opening our doors in 2001, we have served more than 34,000 children. ChicagoCAC is the city’s only not-for-profit organization that coordinates the efforts of child protection staff, law enforcement professionals, family advocates, medical experts and mental health clinicians under one roof. Learn more about our services below and by using the navigation on the left.
 
 Chicago Children’s Advocacy Center and our partners are the front-line responders in Chicago to reports of child sexual abuse. We also respond to reports of child physical abuse, witness to violence, and other serious maltreatment. </p>
         <h2>Response to Sexual Abuse</h2>
-        <p>ChicagoCAC responds to reports of child sexual abuse as part of a multi-disciplinary team of experts. Together, we investigate alleged abuse, conduct forensic interviews, provide family advocacy, reduce trauma and identify resources so that children and families may begin the healing process. Learn more about our response to child sexual abuse. 
-        
+        <p>ChicagoCAC responds to reports of child sexual abuse as part of a multi-disciplinary team of experts. Together, we investigate alleged abuse, conduct forensic interviews, provide family advocacy, reduce trauma and identify resources so that children and families may begin the healing process. Learn more about our response to child sexual abuse.
+
         To learn more about ChicagoCAC and to help explain to children what they will experience at the center before they arrive, check out our child-friendly coloring book.</p>
         <h2>Education, Prevention, and Policy</h2>
         <p>ChicagoCAC’s education, prevention & policy team facilitates trainings for professionals and community members on preventing, recognizing, responding to and reporting abuse. In addition, the team conducts trainings on trauma-informed environments, protecting children with disabilities and more. Learn more about our outreach. </p>
@@ -109,28 +110,28 @@ In accordance with Federal law, ChicagoCAC does not discriminate on the basis of
         <h2>Response to Commercial Sexual Exploitation of Children</h2>
         <p>CSEC is a form of sexual abuse that involves the exploitation of a child for the financial benefit of any person or in exchange for anything of value; some of which include sex trafficking, prostitution, pornography, online transmission of live video of a child engaged in sexual activity, and child labor. Our CSEC Specialist provides case coordination and collaboration for child victims and their families. </p>
       </div>
-      
+
       <div id="parent_handbook" class="info-div container-fluid">
         <h1>Parent Handbook</h1>
         <embed src="../pdf/Parent_Handbook.pdf" width="540" height="700" />
       </div>
-      
+
       <div id="cyber_bullying" class="info-div container-fluid">
         <h1>Cyber Bullying</h1>
         <embed src="../pdf/Cyber_Bullying.pdf" width="540" height="700" />
       </div>
       <!-- End Sidebar Links -->
-    
+
     </div>
     <!-- /#Page Content Wrapper -->
-    
+
   </div>
   <!-- /#Wrapper -->
-   
+
   <!-- Bootstrap core JavaScript -->
   <script src="../static/js/jquery.min.js"></script>
   <script src="../static/js/bootstrap.bundle.min.js"></script>
-  
+
   <!-- Menu Toggle Script -->
   <script>
     $("#menu-toggle").click(function(e) {

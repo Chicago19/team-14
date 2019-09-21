@@ -22,6 +22,7 @@
 
 <body>
         <div class="navbar2">
+                <a id="arrow" onclick="myFunction()"> &#8592 </a>
                 <a href="#">Age Group 0-3</a>
                 <a href="../index.html">Parents</a>
                 <div class="dropdown2">
@@ -34,7 +35,7 @@
                     <a href="./kids4.html">Age 10-12</a>
                     <a href="./kids5.html">Age 12-18</a>
                   </div>
-                </div> 
+                </div>
               </div>
     <div class="container-fluid" style = "margin-top: 50px; margin-left: -15px;">
          <div class="my-drawing" style="width: 540px; height: 700px;"></div>
@@ -43,9 +44,14 @@
                  document.getElementsByClassName('my-drawing')[0],
                  {imageURLPrefix: '../static/img'},
              );
-             
-         </script>      
+
+         </script>
+         <script>
+             function myFunction() {
+               window.history.back();
+             }
+         </script>
     </div>
 </body>
-  
+
 </html>
