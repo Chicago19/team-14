@@ -1,0 +1,39 @@
+/*
+green: a8c399
+purple: 9370b1
+*/
+
+body {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  background: #eaf0e7;
+}
+
+#header {
+  margin: 1em;
+}
+
+#content {
+  padding: 1em;
+  background: #a8c399;  
+  border-radius: 16px;
+}
+
+.btn {
+  display: block;
+  margin: 1em auto;
+  width: 60%;
+}
+
+/*
+.button {
+  display: block;
+  padding: 2em;
+  border: 2px solid black;
+  margin: .2em;
+}
+
+a:hover {
+  text-decoration: none;
+}*/
