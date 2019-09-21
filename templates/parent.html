@@ -14,6 +14,7 @@
   <link href="../static/css/parent.css" rel="stylesheet">
   <link href="../static/css/style.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>window.onload = function() {document.getElementById("defaultOpen").click();}</script>
 
 </head>
 
@@ -32,8 +33,9 @@
         <a href="#" class="list-group-item list-group-item-action bg-light">Referrals</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'welcome_parents')">Welcome</button> 
-        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'what_we_do')">What We Do</button> 
+        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'welcome_parents')" id="defaultOpen">Welcome</button>
+        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'what_we_do')">What We Do</button>
+        <button class="list-group-item list-group-item-action bg-light tablinks" onclick="openTab(event, 'parent_handbook')">Parent Handbook</button>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -67,7 +69,6 @@
             <li>provides mental health therapy</li>
           </ul>
           <p>All of our services are aimed at reducing trauma so that children and families may begin the healing process. ChicagoCAC’s services are free of charge to every client.</p>
-          <embed src="../pdf/Parent_Handbook.pdf" width="540" height="700" />
         </div>
       </div>
 
@@ -85,9 +86,10 @@ Chicago Children’s Advocacy Center and our partners are the front-line respond
         <p>ChicagoCAC’s education, prevention & policy team facilitates trainings for professionals and community members on preventing, recognizing, responding to and reporting abuse. In addition, the team conducts trainings on trauma-informed environments, protecting children with disabilities and more. Learn more about our outreach. </p>
       </div>
 
-      <!--  -->
-      <div id="" class="tabcontent container-fluid">
-        <h1></h1>
+      <!-- Parent Handbook -->
+      <div id="parent_handbook" class="tabcontent container-fluid">
+        <h1>Parent Handbook</h1>
+        <embed src="../pdf/Parent_Handbook.pdf" width="540" height="700" />
       </div>
 
       <!--  -->
@@ -131,6 +133,7 @@ Chicago Children’s Advocacy Center and our partners are the front-line respond
 
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(cityName).style.display = "block";
+  $('.tablinks').css('color','#666666')
   evt.currentTarget.className += " active";
 }
   </script>
