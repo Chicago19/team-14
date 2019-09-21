@@ -65,7 +65,7 @@ ul li::before {
 
 #page-content-wrapper {
   min-width: 100vw;
-  font-size:
+
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -89,4 +89,63 @@ ul li::before {
 
 .info-div h1, h2, h3 {
   color: #9370b1;
+}
+.navbar2 {
+  overflow: hidden;
+  background-color: #76499e;
+}
+
+.navbar2 a {
+  float: left;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown2 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown2 .dropbtn2 {
+  font-size: 24px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar2 a:hover, .dropdown2:hover .dropbtn2 {
+  background-color: #492b63;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content2 a:hover {
+  background-color: #ddd;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
 }
